@@ -1,0 +1,24 @@
+
+[
+  {
+    "id": 1,
+    "titulo": "Cien años de soledad",
+    "autor": "Gabriel García Márquez",
+    "genero": "Realismo mágico",
+    "anioPublicacion": 1967
+  },
+  {
+    "id": 2,
+    "titulo": "El principito",
+    "autor": "Antoine de Saint-Exupéry",
+    "genero": "Fábula",
+    "anioPublicacion": 1943
+  },
+  {
+    "id": 3,
+    "titulo": "Don Quijote de la Mancha",
+    "autor": "Miguel de Cervantes",
+    "genero": "Novela",
+    "anioPublicacion": 1605
+  }
+]
