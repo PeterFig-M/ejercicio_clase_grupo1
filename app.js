@@ -3,7 +3,7 @@ const express = require('express');
 const fs = require('fs');
 const path = require('path');
 
-// Rutas GET (tu feature)
+// Rutas GET
 const getRoutes = require('./features/get');
 
 const app = express();
@@ -21,7 +21,7 @@ function writeBooks(books) {
   fs.writeFileSync(booksFile, JSON.stringify(books, null, 2));
 }
 
-// RUTAS GET (montadas desde tu feature)
+// RUTAS GET
 app.use('/api/books', getRoutes);
 
 // POST: Agregar libro
