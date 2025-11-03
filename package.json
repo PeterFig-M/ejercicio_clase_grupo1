@@ -1,0 +1,23 @@
+{
+  "name": "ejercicio_clase_grupo1",
+  "version": "1.0.0",
+  "description": "Desarrollo de aplicaciones web 1",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PeterFig-M/ejercicio_clase_grupo1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PeterFig-M/ejercicio_clase_grupo1/issues"
+  },
+  "homepage": "https://github.com/PeterFig-M/ejercicio_clase_grupo1#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
