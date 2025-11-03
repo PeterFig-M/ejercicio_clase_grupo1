@@ -4,6 +4,8 @@
   "description": "Desarrollo de aplicaciones web 1",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +21,8 @@
   "homepage": "https://github.com/PeterFig-M/ejercicio_clase_grupo1#readme",
   "dependencies": {
     "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }

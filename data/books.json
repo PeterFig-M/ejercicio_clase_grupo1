@@ -19,5 +19,19 @@
     "autor": "Payasin Melado",
     "genero": "Novela",
     "anioPublicacion": 1969
+  },
+  {
+    "id": 4,
+    "titulo": "El principito",
+    "autor": "Antoine de Saint-Exupéry",
+    "genero": "Fábula",
+    "anioPublicacion": 1943
+  },
+  {
+    "id": 5,
+    "titulo": "Don Quijote de la Mancha",
+    "autor": "Miguel de Cervantes",
+    "genero": "Novela",
+    "anioPublicacion": 1605
   }
 ]
