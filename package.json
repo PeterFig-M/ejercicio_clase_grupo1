@@ -2,8 +2,11 @@
   "name": "ejercicio_clase_grupo1",
   "version": "1.0.0",
   "description": "Desarrollo de aplicaciones web 1",
-  "main": "index.js",
+  "main": "app.js",
+  "type": "commonjs",
   "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -13,12 +16,15 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/PeterFig-M/ejercicio_clase_grupo1/issues"
   },
   "homepage": "https://github.com/PeterFig-M/ejercicio_clase_grupo1#readme",
   "dependencies": {
     "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
+

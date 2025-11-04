@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "titulo": "Cien Años de Soledad",
+    "autor": "Gabriel García Márquez",
+    "genero": "Realismo Mágico",
+    "anioPublicacion": 1967
+  },
+  {
+    "id": 2,
+    "titulo": "Rayuela",
+    "autor": "Julio Cortázar",
+    "genero": "Novela",
+    "anioPublicacion": 1963
+  },
+  {
+    "id": 3,
+    "titulo": "El payaso",
+    "autor": "Payasin Melado",
+    "genero": "Novela",
+    "anioPublicacion": 1969
+  },
+  {
+    "id": 4,
+    "titulo": "El principito",
+    "autor": "Antoine de Saint-Exupéry",
+    "genero": "Fábula",
+    "anioPublicacion": 1943
+  },
+  {
+    "id": 5,
+    "titulo": "Don Quijote de la Mancha",
+    "autor": "Miguel de Cervantes",
+    "genero": "Novela",
+    "anioPublicacion": 1605
+  }
+]
