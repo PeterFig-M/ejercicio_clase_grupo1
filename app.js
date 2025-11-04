@@ -1,4 +1,4 @@
-// app.js — versión unificada (GET + POST + PUT/DELETE si luego se agregan)
+// app.js — API de libros (GET desde router + POST + PUT + DELETE usando data/books.json)
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
@@ -47,10 +47,33 @@ app.post('/api/books', (req, res) => {
   res.status(201).json(newBook);
 });
 
-// DELETE: Eliminar por id
+// PUT: Actualizar libro por id
+app.put('/api/books/:id', (req, res) => {
+  const books = readBooks();
+  const id = parseInt(req.params.id, 10);
+
+  const index = books.findIndex(b => b.id === id);
+  if (index === -1) {
+    return res.status(404).json({ message: 'Libro no encontrado' });
+  }
+
+  const { titulo, autor, genero, anioPublicacion } = req.body;
+
+  if (titulo !== undefined) books[index].titulo = titulo;
+  if (autor !== undefined) books[index].autor = autor;
+  if (genero !== undefined) books[index].genero = genero;
+  if (anioPublicacion !== undefined) {
+    books[index].anioPublicacion = Number(anioPublicacion);
+  }
+
+  writeBooks(books);
+  res.json({ message: 'Libro actualizado correctamente', book: books[index] });
+});
+
+// DELETE: Eliminar libro por id
 app.delete('/api/books/:id', (req, res) => {
   const books = readBooks();
-  const id = parseInt(req.params.id);
+  const id = parseInt(req.params.id, 10);
 
   const index = books.findIndex(b => b.id === id);
   if (index === -1) {
@@ -66,4 +89,5 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
+
 
